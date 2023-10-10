@@ -57,7 +57,7 @@
 		cpu0:cpu@0x000 {
 			device_type = "cpu";
 			compatible = "arm,cortex-a7";
-			reg = <0x000>;
+			reg = <0xf00>;
 			operating-points = <
 				/* KHz    uV */
 				 816000 1000000
@@ -70,19 +70,19 @@
 		cpu1:cpu@0x001 {
 			device_type = "cpu";
 			compatible = "arm,cortex-a7";
-			reg = <0x001>;
+			reg = <0xf01>;
 		};
 
 		cpu2:cpu@0x002 {
 			device_type = "cpu";
 			compatible = "arm,cortex-a7";
-			reg = <0x002>;
+			reg = <0xf02>;
 		};
 
 		cpu3:cpu@0x003 {
 			device_type = "cpu";
 			compatible = "arm,cortex-a7";
-			reg = <0x003>;
+			reg = <0xf03>;
 		};
 	};
 

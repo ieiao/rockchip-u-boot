@@ -12,6 +12,7 @@ DECLARE_GLOBAL_DATA_PTR;
 
 int board_early_init_r(void)
 {
+#if 0
 	struct udevice *pmic;
 	int ret;
 
@@ -23,6 +24,6 @@ int board_early_init_r(void)
 	ret = rk818_spl_configure_usb_input_current(pmic, 2000);
 	if (ret)
 		return ret;
-
+#endif
 	return 0;
 }
